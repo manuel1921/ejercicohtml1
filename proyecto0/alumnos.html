@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notas</title>
+    <script type="text/javascript">
+        var notaalumno;
+        notaalumno = window.prompt("Dime tu nota ");
+
+        //!isNaN se usa para comprovar si es un numero
+        if(!isNaN(notaalumno)){
+            /*en este condicional vermos si notaalumno es mayor o igual y si esa 
+            condicion se cumple pues se ase la accion*/
+            if(notaalumno >= 60){
+                document.writeln("Aprovado ");
+            }else{//si no se cumple esta accion se ejecutara
+             document.writeln("La cagastes");
+            }
+        }else{
+            document.writeln("recarga para imtroducir un valor correcto")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

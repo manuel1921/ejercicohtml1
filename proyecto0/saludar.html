@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //creamos la funciones necesarias para utilisar 
+        var nombre;
+        var fecha = new Date();
+        var hora = fecha.getHours();
+        var minutos = fecha.getMinutes();
+
+        nombre = window.prompt("introdicir nombre  💂‍♂️: ");
+
+        if(hora < 12){
+            document.writeln("Buenos dias  👨" + nombre);
+        }
+        if(hora >= 12){
+                document.writeln("Buenas tardes  🍖🍖🍖" + nombre);
+            }
+        if(hora >=20){
+                nombre = window.prompt("Buenas noches  🌚🌚" + nombre);
+            }
+
+        document.writeln( fecha + hora + minutos );
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

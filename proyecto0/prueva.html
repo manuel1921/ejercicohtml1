@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        
+
+        function Alumno(nombre, edad, id){
+            this.nombre = nombre;
+            this.edad = edad;
+            this.id = id;
+            alert("creacion de un objeto de la clase Alumno");
+        }
+      
+        Alumno.prototype.nombre = " "; 
+        Alumno.prototype.edad = 4;
+        Alumno.prototype.id = 2 ;
+        Alumno.prototype.saludaraAlumno = function()//definimos el metodo
+        {
+            alert("hola soy" + this.nombre) ;
+        }
+        var alumno1 = new Alumno("Manuel",20,0);
+        var alumno2 = new Alumno("Luis",20,1);
+        var alumno3 = new Alumno("Dani",20,2);
+        //mostramos los nombre de los alumnos
+        alert("el nombre de alumno es:" + alumno1.nombre);
+        alumno1.saludaraAlumno();//llamamos al metodo
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

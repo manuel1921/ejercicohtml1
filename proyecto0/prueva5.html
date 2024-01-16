@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        function Cliente(nombre,apellido,edad){
+            this.nombre = nombre||Cliente.prototype.nombre;
+            this.apellido = apellido || Cliente.prototype.apellido;
+            this.edad = edad || Cliente.prototype.edad;
+
+        }
+        Cliente.prototype.nombre = "Nombre";
+        Cliente.prototype.apellido = "Apellido";
+        Cliente.prototype.edad = "edad";
+
+        nombre = window.prompt("Dime tu nombre");
+        apellido = window.prompt("dime tu apellido");
+        edad = window.prompt("tu edad es: ");
+
+        document.writeln(nombre + " " + apellido );
+
+        if(edad == 25){
+            document.writeln("Eres jiven");
+        }else{
+            document.writeln("DONDE VAS VIEJO/VUEJA");
+        }
+        document.writeln("<br>");
+        if(edad %2 == 0){
+            document.writeln("edad "+ " " + edad + "es par")
+        }else{
+            document.writeln("edad "+ " " +edad + "es in par")
+        }
+        
+       /* function Numero(){
+            var numero;
+            return numero%2 === 0;
+            
+            numero.window.prompt("untroduce un numero")
+            if( Numero == numero){
+
+                document.writeln("es un numero par");
+
+            }else{
+                document.writeln("es un numero impar");
+            }
+
+        }*/
+
+
+       
+
+       
+
+       
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

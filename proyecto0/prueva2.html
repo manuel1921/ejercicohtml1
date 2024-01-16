@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    //creo unas array
+    /*let nombre = ["Manuel", "Carlo", "Luis","Davis","Lidia"];
+    Math.random();*/
+    
+        //creamos la funcion de alumno
+        function Coche(marca,matricula,puertas){
+            this.marca =marca;
+            this.matricula=matricula;
+            this.puertas = puertas;
+
+            alert("creacion de un objeto de la coche");
+        }
+        Coche.prototype.marca =""; 
+        Coche.prototype.matricula =""; 
+        Coche.prototype.puertas = ""; 
+        
+        Coche.prototype.marcaCoche = function()//definimos el metodo
+        {
+            alert("hola soy" + this.Coche) ;
+        }
+        var coche1= new Coche("bmv","4568drt","5");
+        var coche2= new Coche("audi", "0021prt","3");
+        var coche3= new Coche("fiat", "9875fgs","3");
+        
+
+        //mostramos los nombre de los alumnos
+        alert("el choche es" + coche1.marca);
+        
+        Coche.prototype.marcaCoche();//llamamos al metodo
+
+
+       
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
