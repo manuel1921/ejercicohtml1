@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de cadenas</title>
+    <script type="text/javascript">
+        //ejemplos de cadenas 
+
+        var cadena ="Rincon de la Victoria";
+        //ver longitud de la cadena se usa
+        document.writeln(cadena.length);
+        //fragmento de la cadena esdecir muestra una parte de la cade na
+        document.writeln("<br>" + cadena.substring (10));
+        document.writeln("<br>" + cadena.substring (0,10));
+        //para mostrar una caracter
+        document.writeln("<br>" + cadena.charAt(5));
+        //unir dos cadenas
+        var cadena2 ="Malaga";
+        document.writeln("<br>" + cadena.concat(" malaga"));
+        //indexof
+        document.writeln("<br>" + cadena.indexOf("Rincon")); //devuelve 0 porque esta dentro de esa cadena
+        document.writeln("<br>" + cadena.indexOf("Rincon", 0)); //devuelve 0 
+        document.writeln("<br>" + cadena.indexOf("Malaga")); //devuelve -1 porque no esta en  esa casdena
+        //replace
+        document.writeln("<br>" + cadena.replace("Rincon" , "calle"))//remplasa Rincon por calle
+        //Split - divicion de cadena en una array de cadena
+        document.writeln("<br>" + cadena.split(" "))// devuelve una arry de 4 elementos
+        document.writeln("<br>" + cadena.split("a"))// devuelve una arry de 4 elementos
+        document.writeln("<br>" + cadena.split(","))// devuelve una arry de 4 elementos
+        document.writeln("<br>" + cadena.split(""))// devuelve una arry formato por toda la cadena
+        //ToloowerCase - devuelve la cadena en minuscula
+        document.writeln("<br>" + cadena.toLowerCase());//devuelve rincon de la victoria 
+        //toUpperCase - devuelve la cadena mayuscula
+        document.writeln("<br>" + cadena.toUpperCase());//de vuelve RINCON DE LA VICTORIA
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
